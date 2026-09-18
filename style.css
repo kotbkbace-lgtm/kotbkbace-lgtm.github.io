@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background: #0d0d0f;
+  color: #d8d8d8;
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+/* ---- Шапка ---- */
+.hero {
+  text-align: center;
+  padding: 90px 20px 60px;
+  background: linear-gradient(180deg, #0a0a0c 0%, #131018 100%);
+  border-bottom: 1px solid #2a2a30;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  letter-spacing: 0.15em;
+  color: #7dd87d;
+  text-shadow: 0 0 20px rgba(125, 216, 125, 0.4);
+  font-weight: normal;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #9a9a9a;
+  margin-top: 8px;
+  letter-spacing: 0.1em;
+}
+
+.tagline {
+  margin-top: 30px;
+  font-style: italic;
+  color: #c9a227;
+  font-size: 1.15rem;
+}
+
+/* ---- Навигация ---- */
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(13, 13, 15, 0.95);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 18px;
+  border-bottom: 1px solid #222;
+  z-index: 10;
+}
+
+nav a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #7dd87d;
+}
+
+/* ---- Секции ---- */
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 70px 24px;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #7dd87d;
+  margin-bottom: 28px;
+  border-left: 4px solid #c9a227;
+  padding-left: 16px;
+  letter-spacing: 0.05em;
+}
+
+section p {
+  margin-bottom: 16px;
+  color: #c4c4c4;
+}
+
+.accent {
+  color: #c9a227;
+  font-style: italic;
+  font-size: 1.15rem;
+  margin-top: 24px;
+}
+
+.section-note {
+  color: #888;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+/* ---- Карточка персонажа ---- */
+.hero-card {
+  background: #141418;
+  border: 1px solid #2a2a30;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.hero-info p {
+  margin-bottom: 12px;
+}
+
+.hero-info strong {
+  color: #7dd87d;
+}
+
+/* ---- Миры ---- */
+.worlds-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 22px;
+}
+
+.world {
+  background: #131317;
+  border: 1px solid #262630;
+  border-radius: 10px;
+  padding: 24px;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.world:hover {
+  border-color: #7dd87d;
+  transform: translateY(-3px);
+}
+
+.world h3 {
+  color: #e8e8e8;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.ref {
+  color: #c9a227;
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-bottom: 14px;
+}
+
+.world p {
+  font-size: 0.95rem;
+  color: #b0b0b0;
+  margin-bottom: 10px;
+}
+
+.problem {
+  color: #d16a6a !important;
+  font-weight: bold;
+  font-size: 0.9rem !important;
+  border-top: 1px solid #262630;
+  padding-top: 10px;
+  margin-top: 12px;
+}
+
+.quote {
+  color: #7dd87d !important;
+  font-style: italic;
+  border-left: 2px solid #7dd87d;
+  padding-left: 12px;
+  margin: 12px 0;
+}
+
+/* ---- Персонажи ---- */
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 22px;
+}
+
+.char {
+  background: #131317;
+  border: 1px solid #262630;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.char h3 {
+  color: #7dd87d;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.char p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.char strong {
+  color: #c9a227;
+}
+
+/* ---- Подвал ---- */
+footer {
+  text-align: center;
+  padding: 60px 20px;
+  border-top: 1px solid #222;
+  background: #0a0a0c;
+}
+
+footer p {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.footer-note {
+  color: #7dd87d !important;
+  font-style: italic;
+  margin-top: 12px;
+}
+
+/* ---- Мобильные ---- */
+@media (max-width: 600px) {
+  .hero h1 { font-size: 2.4rem; }
+  .subtitle { font-size: 1rem; }
+  nav { gap: 20px; padding: 14px 8px; }
+  nav a { font-size: 0.8rem; }
+  section { padding: 50px 16px; }
+  section h2 { font-size: 1.5rem; }
+}
